@@ -1,0 +1,80 @@
+:root {
+  --color1: #d4e4f7;
+  --color2: #236ab9;
+  --color3: #fc7307;
+  --color4: #b85b14;
+  --color5: #341c09;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+body {
+  background-color: lightgray;
+}
+
+hr {
+  /* margin: auto 10rem; */
+  border: 1px solid brown;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.sectionHeader {
+  color: var(--color3);
+  font-style: italic;
+}
+
+/* Add this CSS to your master.css or within a <style> element in the <head> of your HTML document */
+
+/* Center-align the form elements */
+form {
+  text-align: left;
+}
+
+/* Style labels and inputs */
+label {
+  display: inline-block; /* Display labels in-line */
+  width: 150px; /* Set a fixed width for labels to maintain spacing */
+  text-align: left; /* Left-align text in labels */
+  margin-right: 10px; /* Add some space to the right of labels */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: calc(
+    100% - 160px
+  ); /* Make input fields and textarea full width, considering label width and margin */
+  padding: 8px; /* Add some padding for better readability */
+  margin-bottom: 10px; /* Add space between form elements */
+}
+
+textarea {
+  resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+/* Center the form within its section */
+section {
+  text-align: center;
+}
+
+input[type="submit"] {
+  background-color: lightblue;
+  width: 120px;
+  height: 32px;
+  border-radius: 15px;
+}
+
+input[type="submit"]:hover {
+  background-color: #fc7307;
+}
+
+input[type="submit"]:active {
+  background-color: #236ab9;
+}

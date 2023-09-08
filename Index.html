@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>336 TRS, DET 2 - Help Desk</title>
+    <link rel="stylesheet" href="master.css">
+  </head>
+  
+  <body>
+    <h1>336 TRS, DET 2/CSS Help Desk</h1>
+    <section>
+      <p>Hello!  Welcome to the CSS Helpdesk! A few items of note.  One: This form should not contain PII (to include) SSNs, Dates of Birth, etc.  <br />
+      It can however, contain the detailed issue information (please keep HIPPA and other personal health information off this form as well.)</p>
+    </section>
+    <hr>
+    <section>
+      <h3 class="sectionHeader">CSS HelpDesk Form</h3>
+
+      <form action="formAction.php" method="post">
+        <label for="firstName">First name:</label>
+        <input type="text" name="firstName" id="firstName"></input>
+        <br />
+        <label for="lastName">Last name:</label>
+        <input type="text" name="lastName" id="lastName"></input>
+        <br />
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="text" name="phoneNumber" id="phoneNumber"></input>
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email"></input>
+        <br />
+        <label for="details">List what you require in detail:</label>
+        <textarea name="details" id="details" cols="50" rows="10"></textarea>
+        <br />
+        <input type="submit" name="submit" value="submit">
+      </form>
+    </section>
+  </body>
+
+
+</html>
